@@ -1,0 +1,131 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  /* Responsiveness */
+  
+  @media (max-width: 1280px) {
+    .footer-links {
+      gap: 30px; /* Adjust gap between links on medium screens */
+    }
+    .footer-copyright {
+      font-size: 18px; /* Reduce font size slightly on medium screens */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .footer {
+      gap: 30px; /* Reduce gap between elements on smaller screens */
+    }
+    .footer-logo p {
+      font-size: 40px; /* Adjust logo text size for smaller screens */
+    }
+    .footer-links {
+      gap: 20px; /* Further reduce gap between links on smaller screens */
+      font-size: 16px; /* Reduce link text size for smaller screens */
+    }
+    .footer-copyright {
+      font-size: 16px; /* Reduce copyright text size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .footer {
+      flex-direction: column-reverse; /* Switch to vertical layout on small screens */
+    }
+    .footer-logo,
+    .footer-links,
+    .footer-social-icons,
+    .footer-copyright {
+      width: 100%; /* Make footer elements take full width on small screens */
+    }
+    .footer-logo {
+      justify-content: center; /* Center logo content horizontally on small screens */
+      transform: scale(0.5);
+    }
+    .footer-links {
+      flex-wrap: wrap; /* Wrap links to multiple lines on small screens */
+      justify-content: center; /* Center links horizontally on small screens */
+    }
+    .footer-links li{
+        font-size: 16px;
+    }
+    .footer-social-icons {
+      justify-content: center; /* Center social icons horizontally on small screens */
+    }
+    .footer-copyright {
+      margin-bottom: 10px; /* Reduce bottom margin on small screens */
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .footer-logo p {
+      font-size: 36px; /* Further reduce logo text size for very small screens */
+    }
+    .footer-links {
+      font-size: 14px; /* Further reduce link text size for very small screens */
+    }
+  }
+  
+  /* Other footer styles */
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-logo p {
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+  }
+  
+  .footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+  }
+  
+  .footer-links li {
+    cursor: pointer;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+  }
+  
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+  }
+  
+  .footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+  }
+  
